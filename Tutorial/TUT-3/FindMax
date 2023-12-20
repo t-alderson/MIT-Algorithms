@@ -1,0 +1,14 @@
+-- Assume N (size) is power of 2
+
+FindMax(A, start, end)::
+    if(start == end) then
+        return A[start]
+
+    midpoint = (end + start)/2        
+    left_max = FindMax(A, start, midpoint)
+    right_max = FindMax(A, midpoint + 1, end)
+    
+    if(left_max > right_max) then
+        return left_max
+    else
+        return right_max

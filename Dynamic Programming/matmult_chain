@@ -1,0 +1,7 @@
+matmult_chain(i, j)
+    if(u == j)
+        return 0
+    min_mult = 1000000000000000000000
+    for k = i +1 while k < j increment k++
+        temp = matmult_chain(i, k) + matmult_chain(k + 1, j) + dims[i]*dims[k]*dims[j]
+        min_mult = min(minmult, temp)

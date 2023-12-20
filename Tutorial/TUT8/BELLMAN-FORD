@@ -1,0 +1,20 @@
+BELLMAN_FORD(G, w, s)
+    INITIALIZE_SINGLE_SOURCE(G,s)
+    for i = 1 to |G.V| -1
+        for each edge (u, v) in G.E
+            RELAX(u, v, w)
+    for each edge (u, v) in G.each
+        if v.d > u.d + w(u,v)
+            return FALSE
+    return TRUE
+
+RELAX(u, v, w)
+    if v.d > u.d + w(u, v)
+        v.d = u.d + w(u,v)
+        v.pi = u            --set predecessor to u 
+
+INITIALIZE_SINGLE_SOURCE(G, s)
+    for each vertex v in G.V
+        v.d = 100000000000000000000000000      -- infinity
+        v.pi = NULL
+    s.d = 0

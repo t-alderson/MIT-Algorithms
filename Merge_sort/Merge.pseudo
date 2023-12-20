@@ -1,0 +1,8 @@
+Merge_Sort(A,p,r)
+    if p >= r                       // zero or one element?
+        return
+    q = [(p+r)/2]                   // midpoint of A[p:r]
+    Merge_Sort(A, p, q)             // recursively sort A[p:q]
+    Merge_Sort(A, q+ 1, q)          // recursively sort A[q+1:r]
+    //Merge_Sort[A(p:q)] and A[q + 1:r] into A[p:r].
+    Merge(A, p, q, r)

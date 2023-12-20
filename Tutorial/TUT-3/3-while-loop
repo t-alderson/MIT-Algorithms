@@ -1,0 +1,13 @@
+found = 0
+i = 0
+
+while ((found == zero) and (i <= n))
+    if (A[i] == key_value) then
+        found = 1
+    else
+        i = i + 1
+    
+
+
+        
+

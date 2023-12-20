@@ -1,0 +1,10 @@
+LTCount (a, lt_count,n)::
+    for i = 0 to n-1 do
+        lt_count[i] = 0
+            for j=0 to n-1 do 
+                if (a[j]< a[i]) then
+                    lt_count[i] = lt_count[i] + 1
+                end if
+            end if
+        end for
+    end for

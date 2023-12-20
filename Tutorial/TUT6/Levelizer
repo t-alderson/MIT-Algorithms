@@ -1,0 +1,10 @@
+Levelizer(G)::
+    initialize all levels to ZERO (v.level)
+    Sorted_vertex_order = Topological_Sort(G)
+    for each v in Sorted_vertex_order do
+        for each u in adj_list_of_V do  
+            if(v.level + 1 > u.level) then
+                u.level = v.level + 1
+            end if
+        end for
+    end for

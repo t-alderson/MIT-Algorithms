@@ -1,0 +1,22 @@
+//int time; //<-- do we need global time
+            // we can stick it into graph typedef
+
+
+typedef struct _graph{
+    //...
+    //fill in defition
+    //...
+    int time;
+}Graph;
+
+void DFS(Graph *g, int s){
+    //...
+    //fill in code
+    //...
+}
+
+void DFS(Graph *g, int u){
+    //...
+    //Fill in code
+    //...
+}
